@@ -1,0 +1,24 @@
+node_modules/
+out/
+dist/
+.tsbuild/
+.DS_Store
+*.log
+capturas.zip
+demonstracao/
+
+# Dados de discentes e documentos institucionais: não versionados.
+# As planilhas do Teste de Progresso trazem nome e desempenho questão a
+# questão de pessoas reais, e a ficha individual mostra uma aluna
+# identificada. Nada disso entra no repositório de código.
+*.xlsx
+*.xls
+*.csv
+*.docx
+*.pptx
+*.pdf
+capturas/24-analise-discente-ficha.png
+
+# Saída de build do Next
+.next/
+web/.next/

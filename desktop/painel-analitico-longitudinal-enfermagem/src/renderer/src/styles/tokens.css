@@ -1,0 +1,35 @@
+/*
+ * Design tokens extraídos dos mockups aprovados pelas docentes parceiras
+ * (Login.pdf, Admin – Cadastro de usuários 2.pdf, Dashboard geral.pdf).
+ * Os valores de cor foram amostrados diretamente dos arquivos.
+ */
+:root {
+  --cor-primaria: #285961;
+  --cor-primaria-esc: #1d3e44;
+  --cor-apoio: #8bb2b6;
+  --cor-apoio-clara: #afc8cb;
+  --cor-alerta: #b04c24;
+  --cor-fundo: #f4f6f5;
+  --cor-superficie: #ffffff;
+  --cor-texto: #1a1a1a;
+  --cor-texto-suave: #6b7280;
+  --cor-borda: #e5e7eb;
+
+  --raio: 10px;
+  --raio-pequeno: 6px;
+  --sombra-card: 0 1px 3px rgba(0, 0, 0, 0.06);
+
+  --fonte: "Segoe UI", "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --fonte-tamanho-base: 15px;
+
+  --espaco-1: 4px;
+  --espaco-2: 8px;
+  --espaco-3: 12px;
+  --espaco-4: 16px;
+  --espaco-5: 24px;
+  --espaco-6: 32px;
+  --espaco-7: 48px;
+
+  --altura-topbar: 56px;
+  --largura-conteudo: 1320px;
+}

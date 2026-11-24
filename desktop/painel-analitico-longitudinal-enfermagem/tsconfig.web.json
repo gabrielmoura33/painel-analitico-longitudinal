@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2022",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": [],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./.tsbuild/web",
+    "paths": { "@compartilhado/*": ["./src/shared/*"] }
+  },
+  "include": ["src/renderer/**/*.ts", "src/shared/**/*.ts"]
+}

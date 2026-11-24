@@ -1,0 +1,52 @@
+{
+  "name": "painel-analitico-longitudinal",
+  "version": "0.1.0",
+  "description": "Painel Analítico Longitudinal — acompanhamento de desempenho acadêmico a partir do Teste de Progresso",
+  "main": "./out/main/index.js",
+  "author": "Equipe Projeto: Aplicações para Sustentabilidade — PUC Minas SI EAD",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "npm run typecheck && electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "empacotar:mac": "npm run build && electron-builder --mac",
+    "empacotar:win": "npm run build && electron-builder --win"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "chart.js": "^4.6.1",
+    "exceljs": "^4.4.0",
+    "mongodb": "^7.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "electron": "^45.1.0",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "build": {
+    "appId": "br.pucminas.si.painelanalitico",
+    "productName": "Painel Analitico Longitudinal",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.education"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

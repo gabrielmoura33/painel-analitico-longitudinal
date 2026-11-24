@@ -1,0 +1,30 @@
+<!--
+  Marca estendida: a cruz da identidade sobre a série ascendente que dá nome
+  ao painel. Usada onde há tamanho para lê-la — splash, capa, apresentação.
+  Para ícone de aplicativo use icone.svg, que sobrevive a 16 px.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Painel Analítico Longitudinal">
+  <defs>
+    <linearGradient id="fundoCompleto" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2F666E" />
+      <stop offset="1" stop-color="#1D3E44" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#fundoCompleto)" />
+
+  <!-- Cruz da identidade, no plano de cima. -->
+  <g fill="#FFFFFF">
+    <rect x="27.5" y="8" width="9" height="26" rx="3" />
+    <rect x="18" y="16.5" width="28" height="9" rx="3" />
+  </g>
+
+  <!-- Série ascendente: o acompanhamento longitudinal, em plano separado. -->
+  <g fill="#8BB2B6">
+    <rect x="12" y="48" width="6" height="7" rx="2" opacity="0.45" />
+    <rect x="21" y="45" width="6" height="10" rx="2" opacity="0.6" />
+    <rect x="30" y="42" width="6" height="13" rx="2" opacity="0.75" />
+    <rect x="39" y="39" width="6" height="16" rx="2" opacity="0.88" />
+    <rect x="48" y="36" width="6" height="19" rx="2" />
+  </g>
+</svg>
